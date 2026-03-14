@@ -59,10 +59,57 @@ nav{
     border: solid darkgreen 0.2rem;
     background-color: white;
     margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
-    background-color: rgb(0, 59, 0);
-    border: solid white 0.2rem;
-    transition: all 0.3s ease-in-out;
+.box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 59, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.box1::before{
+    content: "Matemática";
+}
+
+.box2::before{
+    content: "Português";
+}
+
+.box3::before{
+    content: "Geografia";
+}
+
+.box4::before{
+    content: "História";
+}
+
+.box5::before{
+    content: "Química";
+}
+
+.box6::before{
+    content: "Física";
+}
+
+.box1:hover::before, .box2:hover::before, .box3:hover::before, .box4:hover::before, .box5:hover::before, .box6:hover::before{
+    opacity: 1;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
