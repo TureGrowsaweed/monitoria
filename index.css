@@ -30,12 +30,12 @@ body{
     width: 100%;
 }
 
-a:active, a:link, a:visited{
+.links:active, .links:link, .links:visited{
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+.links:hover{
     text-decoration: underline;
 }
 
@@ -76,7 +76,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
     font-size: 3rem;
     font-weight: bold;
 }

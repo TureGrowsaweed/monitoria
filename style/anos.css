@@ -1,0 +1,22 @@
+.anos{
+    list-style: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1.2rem;
+}
+
+.anos a:active, .anos a:link, .anos a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.anos a:hover{
+    text-decoration: underline;
+}
+
+.nav{
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.7rem;
+    list-style: none;
+}
