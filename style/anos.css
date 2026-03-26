@@ -43,3 +43,8 @@
 .botao:hover{
     transform: scale(1.05); /* Faz o botaozinho crescer em 5% */
 }
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color: darkgreen;
+}
