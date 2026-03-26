@@ -3,6 +3,10 @@
     font-size: 1.5rem;
     text-decoration: none;
     padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vh;
 }
 
 .anos a:active, .anos a:link, .anos a:visited{
@@ -19,4 +23,23 @@
     padding: 1rem;
     font-size: 1.7rem;
     list-style: none;
+}
+
+.botao{
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 0.5rem;
+    height: 30vh;
+    width: 35%;
+    border: solid darkgreen 0.2rem;
+    background-color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao:hover{
+    transform: scale(1.05); /* Faz o botaozinho crescer em 5% */
 }

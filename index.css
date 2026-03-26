@@ -26,9 +26,10 @@ body{
     justify-content: space-evenly;
     padding: 0.8rem;
     background-color: rgb(0, 59, 0);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 100%;
 }
+
 
 .links:active, .links:link, .links:visited{
     text-decoration: none;
@@ -54,14 +55,18 @@ nav{
 
 .box1, .box2, .box3, .box4, .box5, .box6{
     border-radius: 0.5rem;
-    //height: 15rem;
+    height: 30vh;
     width: 30%;
     border: solid darkgreen 0.2rem;
     background-color: white;
     margin-bottom: 1rem;
     position: relative;
     overflow: hidden;
+
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
+
 
 .box1::before, .box2::before, .box3::before, .box4::before, .box5::before, .box6::before{
     position: absolute;
@@ -113,4 +118,8 @@ img{
     height: 100%;
     object-fit: cover;
     aspect-ratio: 1/1;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+  transform: scale(1.05); /* Faz o botaozinho crescer em 5% */
 }
